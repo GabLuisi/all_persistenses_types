@@ -1,3 +1,4 @@
+import 'package:all_persistenses_types/Sqlite/listPerson.dart';
 import 'package:all_persistenses_types/screens/home.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
 
       initialRoute: "/",
       routes:{
-        "/" : (context) => const Home()
+        "/" : (context) => const Home(),
+        "/person" : (context) => const ListPerson(),
       }
     );
   }
